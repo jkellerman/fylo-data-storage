@@ -18,6 +18,8 @@ body {
   background-image: url(/images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
 }
 
 .data-storage-container {
@@ -42,7 +44,7 @@ body {
 .icons-container {
   display: flex;
   margin-top: 1.5em;
-  width: 70%;
+  width: 200px;
   justify-content: space-between;
   align-content: center;
 }
@@ -56,4 +58,26 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 10px;
+}
+
+.storage-container {
+  color: white;
+}
+
+.storage-heading {
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold-text {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.gb-container {
+  display: flex;
+  justify-content: space-between;
 }
