@@ -108,6 +108,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding-right: 0.1em;
+  animation: loadbar 2.5s;
 }
 
 .circle {
@@ -205,5 +206,15 @@ body {
     position: absolute;
     top: 3.5em;
     right: 0;
+  }
+}
+
+@keyframes loadbar {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 75%;
   }
 }
