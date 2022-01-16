@@ -158,6 +158,12 @@ body {
 }
 
 @media (min-width: 850px) {
+  body {
+    background-image: url(/images/bg-desktop.png);
+    background-color: var(--Very-Dark-Blue);
+    background-size: contain;
+    background-position-y: bottom;
+  }
   .data-storage-container {
     width: unset;
     height: unset;
