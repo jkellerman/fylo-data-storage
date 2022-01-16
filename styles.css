@@ -99,14 +99,14 @@ body {
 }
 
 .progressing {
-  width: 85%;
+  width: 75%;
   height: 15px;
   background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
   border-radius: 10px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 0.2em;
+  padding-right: 0.15em;
 }
 
 .circle {
@@ -124,7 +124,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 0px 6px 0px black;
   position: absolute;
-  top: 9em;
+  top: 8.5em;
 }
 
 .gb-remaining {
@@ -149,4 +149,54 @@ body {
   transform: translateX(100);
   letter-spacing: 0.1em;
   font-weight: 700;
+}
+
+@media (max-width: 340px) {
+  .gb-remaining-container {
+    top: 10em;
+  }
+}
+
+@media (min-width: 850px) {
+  .data-storage-container {
+    width: unset;
+    height: unset;
+    flex-direction: row;
+    justify-content: unset;
+    align-items: flex-end;
+  }
+
+  .files-container {
+    margin-bottom: unset;
+    margin-right: 1.5em;
+    min-width: 300px;
+  }
+
+  .storage-container {
+    min-width: 500px;
+    max-height: 150px;
+    align-items: flex-start;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+
+  .gb-container {
+    height: 20px;
+  }
+
+  .gb-remaining-container {
+    top: -3em;
+    right: 1.5em;
+    width: 50%;
+    max-width: 170px;
+  }
+
+  .gb-remaining-container::after {
+    content: "";
+    border: 1.25rem solid transparent;
+    border-right-color: white;
+    position: absolute;
+    top: 3.5em;
+    right: 0;
+  }
 }
