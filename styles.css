@@ -57,6 +57,7 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .storage-container {
@@ -157,11 +158,11 @@ body {
   }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
   body {
     background-image: url(/images/bg-desktop.png);
     background-color: var(--Very-Dark-Blue);
-    background-size: contain;
+    background-size: initial;
     background-position-y: bottom;
   }
   .data-storage-container {
